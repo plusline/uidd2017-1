@@ -1,53 +1,38 @@
+.backdrop {
+  width: 600px; height: 300px;
+  position: relative;
+  background-size: 100%;
+  margin: 40px auto;
+}
 .text {
-  background:url("http://imgur.com/sAk79xs");
-  background-repeat:repeat-x;
-  background-position:0 0;
-  font-size:200px;
-  text-transform:uppercase;
-  text-align:center;
-  font-family:'Luckiest Guy';
-  color:transparent;
-  -webkit-font-smoothing:antialiased;
-  -webkit-background-clip:text;
-  -moz-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  margin:0;
-  -webkit-animation:BackgroundAnimated 15s linear infinite;
-  -moz-animation:BackgroundAnimated 15s linear infinite;
-  -ms-animation:BackgroundAnimated 15s linear infinite;
-  -o-animation:BackgroundAnimated 15s linear infinite;
-  animation:BackgroundAnimated 15s linear infinite;
+  color: black;
+  background-color: white;
+  mix-blend-mode: screen; 
+  width: 100%; height: 100%;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 300px;
+  margin: 0;
 }
-@keyframes BackgroundAnimated {
-  from {
-    background-position:0 0
-  }
-  to {
-    background-position:100% 0
-  }
+.inverse {
+  color: white;
+  background-color: black;
 }
-@-webkit-keyframes BackgroundAnimated {
-  from {
-    background-position:0 0
-  }
-  to {
-    background-position:100% 0
-  }
+.backdrop,.text {
+  border-radius: 2px;
 }
-@-ms-keyframes BackgroundAnimated {<     
-  from {
-    background-position:0 0
-  }
-  to {
-    background-position:100% 0
-  }
+.overlay {
+  width: 100%; height: 100%;
+  position: absolute;
+  top: 0;
+  mix-blend-mode:multiply;
 }
-@-moz-keyframes BackgroundAnimated {
-  from {
-    background-position:0 0
-  }
-  to {
-    background-position:100% 0
-  }
+.hello.backdrop {
+  background-image: url(http://66.media.tumblr.com/e454398961e0203f2aad001cf7d177bf/tumblr_mrztj7GFJA1sdyj9lo1_1280.jpg);
+}
+.hello.overlay{
+  background-color: rgba(255,0,0,.1);
+}
+.hello.text{
+font-size: 165pt;
 }
