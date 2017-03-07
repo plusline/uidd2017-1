@@ -1,29 +1,32 @@
 .backdrop {
   width: 100%; height: 100%;
   background-size: 100%;
+  position: relative;
+  //vertical-align: middle;
 }
 .text {
-  color: black;
+  color: block;
   background-color: white;
-  mix-blend-mode: screen; 
+  mix-blend-mode: screen;
   width: 100%; height: 100%;
   font-weight: bolder;
   text-align: center;
-  line-height: 46%;
-  margin: 0;
-  vertical-align: middle;
+  margin: 0px;
 }
 .overlay {
   width: 100%; height: 100%;
-  top: 0px;
-  //mix-blend-mode: multiply;
+  position: absolute;
+  mix-blend-mode: multiply;
 }
 .hello.backdrop {
-  background-image: url("http://www.baltagroup.com/media/img/pics/_original/water.jpg?type=crop&w=1740&h=600");
+  background-image: url("http://hires.photospublic.com/PP36090507-Blue-Sea-Water-Texture.jpg");
 }
 .hello.overlay{
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/fd/6e/73/fd6e735349591e1dcabd6f990c283f85.jpg");
+  background-size: cover;
+  top: 0px;
 }
 .hello.text{
-font-size: 120pt;
+  font-size: 130pt;
+  padding: 28% 0 280px 0;
 }
