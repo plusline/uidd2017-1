@@ -19,7 +19,7 @@
   mix-blend-mode: multiply;
 }
 .hello.backdrop {
-  background-image: url("http://hires.photospublic.com/PP36090507-Blue-Sea-Water-Texture.jpg");
+  background-image: url("https://i.ytimg.com/vi/d-zKJCKsoWw/maxresdefault.jpg");
 }
 .hello.overlay{
   background-image: url("https://s-media-cache-ak0.pinimg.com/originals/fd/6e/73/fd6e735349591e1dcabd6f990c283f85.jpg");
@@ -27,6 +27,6 @@
   top: 0px;
 }
 .hello.text{
-  font-size: 130pt;
-  padding: 28% 0 280px 0;
+  font-size: 135pt;
+  padding: 28% 0 300px 0;
 }
